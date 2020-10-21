@@ -12,10 +12,10 @@ import random
 
 async def wait_random(max_delay: int = 10) -> float:
     """
-    :param max_delay: maximum time delay
-    :return: random float value between 0-max_delay
+        :param max_delay: maximum time delay
+        :return: random float value between 0-max_delay
     """
-    random_value: float = random.uniform(0, max_delay)
+    random_value = random.uniform(0, max_delay)
     await asyncio.sleep(random_value)
 
     return random_value
