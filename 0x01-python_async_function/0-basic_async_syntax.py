@@ -12,8 +12,8 @@ a default value of 10) named wait_random that waits for a random delay between
 
 async def wait_random(max_delay=10) -> float:
     """
-    :param max_delay: max delay for sleep the function
-    :return: a float random value
+        :param max_delay: max delay for sleep the function
+        :return: a float random value
     """
     random_value: float = random.uniform(0, max_delay)
     await asyncio.sleep(random_value)
