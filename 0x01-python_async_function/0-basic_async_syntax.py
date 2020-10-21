@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-import random
 import asyncio
+import random
 """
 ==============================================================================
 asynchronous coroutine that takes in an integer argument (max_delay, with
