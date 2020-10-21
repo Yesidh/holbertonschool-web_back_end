@@ -10,14 +10,14 @@ import asyncio
 import random
 
 
-async def wait_random(max_delay: int = 10) -> float:
+async def wait_random(max_delay: int = 10):
     """
         Args:
             max_delay: maximum delay time
         Return:
             float time interval
     """
-    random_value: float = random.uniform(0, max_delay)
+    random_value = random.uniform(0, max_delay)
     await asyncio.sleep(random_value)
 
     return random_value
