@@ -10,7 +10,7 @@ a default value of 10) named wait_random that waits for a random delay between
 """
 
 
-async def wait_random(max_delay=10) -> float:
+async def wait_random(max_delay: int = 10) -> float:
     """
         Args:
             max_delay: maximum delay time
