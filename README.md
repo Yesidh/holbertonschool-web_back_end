@@ -24,3 +24,4 @@ for my learning in Holberton School
 |             directories               |             Description                  |
 |--------------------------------| ---------------------------------------- |
 |**0x01-python_async_function**| Python  Async  |
+|**0x02-python_async_comprehension**| Python async comprehesion |
