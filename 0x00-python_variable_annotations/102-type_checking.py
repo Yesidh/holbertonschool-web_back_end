@@ -24,6 +24,11 @@ from typing import Tuple, List
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """
+        :param lst: tuple values
+        :param factor: factor sequence
+        :return: list whit factor values increase
+    """
     zoomed_in: List = [
         item for item in lst
         for i in range(factor)
