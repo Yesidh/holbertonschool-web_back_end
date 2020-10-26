@@ -36,4 +36,5 @@ class BasicCache(BaseCaching):
             :param key: value to get from the dictionary cache_data
             :return:
         """
-        return self.cache_data.get(key)
+        key_value = self.cache_data.get(key)
+        return key_value
