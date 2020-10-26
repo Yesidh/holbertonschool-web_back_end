@@ -28,7 +28,7 @@ class BasicCache(BaseCaching):
             :param item: item value
             :return: anything, add pair key, value to dictionary cache_data
         """
-        if key or item is not None:
+        if key is not None and item is not None:
             self.cache_data[key] = item
 
     def get(self, key):
