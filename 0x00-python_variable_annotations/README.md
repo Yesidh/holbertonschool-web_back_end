@@ -48,6 +48,6 @@ for my learning in Holberton School
 |**7-to_kv.py**| Complex types - string and int/float to tuple  |
 |**8-make_multiplier.py**| Complex types - functions  |
 |**9-element_length.py**| Let's duck type an iterable object   |
-|****|   |
-|****|   |
-|****|   |
+|**100-safe_first_element.py**| uck typing - first element of a sequence  |
+|**101-safely_get_value.py**| More involved type annotations  |
+|**102-type_checking.py**| Type Checking   |
