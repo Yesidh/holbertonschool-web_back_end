@@ -36,5 +36,7 @@ class BasicCache(BaseCaching):
             :param key: value to get from the dictionary cache_data
             :return:
         """
-        key_value = self.cache_data.get(key)
-        return key_value
+        if key is None or self.cache_data.get(key) is None:
+            return None
+        else:
+            return self.cache_data.get(key)
