@@ -34,7 +34,7 @@ class LIFOCache(BaseCaching):
             :return: anything, only modified cache_data dictionary
         """
 
-        if key is None or item is  None:
+        if key is None or item is None:
             pass
         else:
             if len(self.cache_data) >= BaseCaching.MAX_ITEMS:
