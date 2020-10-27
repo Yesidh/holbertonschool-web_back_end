@@ -36,16 +36,16 @@ class FIFOCache(BaseCaching):
         """
         :param key: key to add into cache_data dictionary
         :param item: valeu for a key
-        :return: anythin, only adding data to cache_data
+        :return: anythingpep, only adding data to cache_data
         """
         if key is not None and item is not None:
-            if self.cache_data.get(key) is not None:
-                if len(self.cache_data) > BaseCaching.MAX_ITEMS:
+            if self.cache_data.get(key) is None:
+                if len(self.cache_data) >= BaseCaching.MAX_ITEMS:
                     key_to_del = list(self.cache_data.keys())[0]
                     del self.cache_data[key_to_del]
                     print(f"DISCARD: {key_to_del}")
-            else:
-                self.cache_data[key] = item
+
+            self.cache_data[key] = item
 
     def get(self, key):
         """
