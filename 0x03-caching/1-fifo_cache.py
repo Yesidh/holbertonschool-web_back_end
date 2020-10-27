@@ -44,8 +44,8 @@ class FIFOCache(BaseCaching):
                     key_to_del = list(self.cache_data.keys())[0]
                     del self.cache_data[key_to_del]
                     print("DISCARD: {}".format(key_to_del))
-
-            self.cache_data[key] = item
+            if len(self.cache_data) <= 4:
+                self.cache_data[key] = item
 
     def get(self, key):
         """
