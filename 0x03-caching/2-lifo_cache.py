@@ -34,7 +34,9 @@ class LIFOCache(BaseCaching):
             :return: anything, only modified cache_data dictionary
         """
 
-        if key is not None or item is not None:
+        if key is None or item is  None:
+            pass
+        else:
             if len(self.cache_data) >= BaseCaching.MAX_ITEMS:
                 key_list = list(self.cache_data.keys())
                 key_to_del = key_list[len(key_list) - 1]
