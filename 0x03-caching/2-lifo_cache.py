@@ -24,7 +24,7 @@ from base_caching import BaseCaching
 
 class LIFOCache(BaseCaching):
     """
-
+        LIFOCache class inherit from BaseCaching
     """
 
     def put(self, key, item):
