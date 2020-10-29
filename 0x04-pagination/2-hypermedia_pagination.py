@@ -54,7 +54,8 @@ class Server:
         if indexes[0] > len(__dataset):
             return []
         for i in range(indexes[0], indexes[1]):
-            data.append(__dataset[i])
+            if i <= len(__dataset) and i >= 0:
+                data.append(__dataset[i])
 
         return data
 
