@@ -40,9 +40,9 @@ class Server:
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
 
-        :param page:
-        :param page_size:
-        :return:
+        :param page: page number to calculated the starting index
+        :param page_size: index size per page
+        :return: a tuple with starting and end index for a particular page
         """
 
         assert isinstance(page, int) and isinstance(page_size, int)
@@ -61,13 +61,13 @@ class Server:
     def get_hyper(self, page: int = 1, page_size: int = 10)\
             -> Dict[str, Union[int, List[List], None]]:
         """
-            :param page:
-            :param page_size:
-            :return:
+            :param page: page number to calculated the starting index
+            :param page_size: index size per page
+            :return: a tuple with starting and end index for a particular page
         """
 
-        assert isinstance(page, int) and isinstance(page_size, int)
-        assert page_size > 0 and page > 0
+        # assert isinstance(page, int) and isinstance(page_size, int)
+        # assert page_size > 0 and page > 0
 
         data = self.get_page(page, page_size)
         data_dict: Dict[str, Union[int, List[List], None]] = {}
