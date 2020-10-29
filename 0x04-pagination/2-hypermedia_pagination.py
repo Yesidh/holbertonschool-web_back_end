@@ -53,7 +53,7 @@ class Server:
         indexes = index_range(page, page_size)
         if indexes[0] > len(__dataset):
             return []
-        for i in range(indexes[0], indexes[1] - 1):
+        for i in range(indexes[0], indexes[1] + 1):
             if i <= len(__dataset) and i >= 0:
                 data.append(__dataset[i])
 
