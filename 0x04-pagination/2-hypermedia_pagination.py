@@ -72,7 +72,7 @@ class Server:
         data = self.get_page(page, page_size)
         data_dict: Dict[str, Union[int, List[List], None]] = {}
 
-        data_dict["page_size"] = page_size
+        data_dict["page_size"] = len(data)
         data_dict["page"] = page
         data_dict["data"] = data
         len_data = len(self.__dataset)
