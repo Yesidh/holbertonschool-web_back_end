@@ -1,4 +1,5 @@
-<p>
+	
+1;5202;0c<p>
 <img width="260" height="170" src="https://davidjohncoleman.com/wp-djc/wp-content/uploads/2017/06/HBTN-Borderless-CMYK-Logo-Vertical-Color-Black@1200ppi-300x236.png" align="right" >
 </p>
 
@@ -28,3 +29,4 @@ for my learning in Holberton School
 |**0x02-python_async_comprehension**| Python async comprehesion |
 |**0x03-caching**| Cachinb algorithms |
 |**0x04-pagination**| Pagination |
+|**0x05. Personal data| ussing logging module |
