@@ -14,12 +14,13 @@ filter_datum should be less than 5 lines long and use re.sub to perform the
 substitution with a single regex.
 ================================================================================
 """
+
 from typing import List
 import re
 
 
-def filter_datum(fields: str = List[str], redaction: str = "",
-                 message: str = "", separator: str = "") -> str:
+def filter_datum(fields: List[str], redaction: str,
+                 message: str, separator: str) -> str:
     """
     :param fields: a list of strings representing all fields to obfuscate
     :param redaction:a string representing by what the field will be obfuscated
