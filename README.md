@@ -29,4 +29,4 @@ for my learning in Holberton School
 |**0x02-python_async_comprehension**| Python async comprehesion |
 |**0x03-caching**| Cachinb algorithms |
 |**0x04-pagination**| Pagination |
-|**0x05. Personal data| ussing logging module |
+|**0x05. Personal data**| ussing logging module |
